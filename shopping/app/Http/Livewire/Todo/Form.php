@@ -4,13 +4,14 @@ namespace App\Http\Livewire\Todo;
 
 use App\Models\TodoItem;
 use Livewire\Component;
+use Illuminate\Support\Facades\Log;
 
 class Form extends Component
 {
     public $description;
 
     public $rules =[
-        'description' => 'required|min:6'
+        'description' => 'required'
     ];
 
     public function render()
