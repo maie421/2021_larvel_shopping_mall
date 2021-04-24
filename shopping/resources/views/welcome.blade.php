@@ -14,6 +14,7 @@
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
+                        <a href="{{ url('/dashboard/todo') }}" class="text-sm text-gray-700 underline">todo</a>
                     @else
                         <a href="{{ route('login') }}" class="font-sans mr-8">Log in</a>
 
