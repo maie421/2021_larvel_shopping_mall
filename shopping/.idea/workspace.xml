@@ -135,6 +135,7 @@
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/mckenziearts/laravel-notify" />
     </include_path>
   </component>
   <component name="ProjectId" id="1rQyo7DCx5dbqGYoa5GxwCz9Z3r" />
@@ -151,6 +152,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -177,10 +179,34 @@
       <workItem from="1619099856379" duration="624000" />
       <workItem from="1619241446174" duration="6653000" />
       <workItem from="1619262535568" duration="601000" />
+      <workItem from="1619347949486" duration="5610000" />
+      <workItem from="1619942964106" duration="4380000" />
+      <workItem from="1619960744193" duration="5909000" />
+      <workItem from="1620224884887" duration="7073000" />
+      <workItem from="1620232605058" duration="241000" />
+      <workItem from="1620232858171" duration="204000" />
+      <workItem from="1620233079551" duration="131000" />
+      <workItem from="1620233229365" duration="362000" />
+      <workItem from="1620233605019" duration="225000" />
+      <workItem from="1620233874774" duration="2250000" />
+      <workItem from="1620310053342" duration="339000" />
+      <workItem from="1620310615635" duration="57000" />
+      <workItem from="1620457968255" duration="783000" />
+      <workItem from="1620459690226" duration="1901000" />
+      <workItem from="1620462314509" duration="32000" />
+      <workItem from="1620462358502" duration="4128000" />
+      <workItem from="1620479085079" duration="9093000" />
+      <workItem from="1620543708805" duration="3071000" />
+      <workItem from="1620547317571" duration="7843000" />
+      <workItem from="1620569227968" duration="7010000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

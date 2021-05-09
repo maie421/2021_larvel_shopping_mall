@@ -13,7 +13,7 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
+                    <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
                     @else
                         <a href="{{ route('login') }}" class="font-sans mr-8">Log in</a>
 
@@ -23,7 +23,6 @@
                     @endauth
                 </div>
             @endif
-
                 <h1 class="text-4xl font-bold">메인화면입니다.</h1>
         </div>
     </body>
