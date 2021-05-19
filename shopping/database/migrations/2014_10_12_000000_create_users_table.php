@@ -27,11 +27,11 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
 
-        DB::table('users')->insert([
+/*        DB::table('users')->insert([
             'name' => '관리자',
             'email' => 'admin@naver.com',
             'password' => Hash::make('12345678'),
-        ]);
+        ]);*/
     }
 
     /**

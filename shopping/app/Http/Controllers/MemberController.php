@@ -18,7 +18,8 @@ class MemberController extends Controller
      */
     public function index()
     {
-        //
+        $user_list=User::orderBy('created_at','DESC')->paginate(2);
+        return view('/shopping/member',compact('user_list'));
     }
 
     /**
@@ -39,8 +40,8 @@ class MemberController extends Controller
      */
     public function store(StoreUser $request)
     {
-        $user_check = User :: where ( 'email' , '=' , $request->email )->count();
-        if($user_check > 0){
+        $user_is_check = User::where ( 'email' , '=' , $request->email )->count();
+        if($user_is_check > 0){
             notify()->error('이미 존재하는 회원입니다.');
         }else{
             $user           = new User();

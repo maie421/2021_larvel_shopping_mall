@@ -15,7 +15,7 @@ class CreateOrderTable extends Migration
     {
         Schema::create('order', function (Blueprint $table) {
             $table->id();
-            $table->integer('member_id')->unsigned();
+            $table->integer('user_id')->unsigned();
             $table->integer('delivery_id')->unsigned();
             $table->enum('status',['order','cancel']);
             $table->timestamps();

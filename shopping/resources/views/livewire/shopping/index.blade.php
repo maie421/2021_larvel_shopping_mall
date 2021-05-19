@@ -8,7 +8,7 @@
             <a href="{{ route('member_form') }}"> 회원 가입</a>
         </button>
         <button class="bg-gray-400 hover:bg-gray-500 rounded-md px-9 py-5 text-white text-2xl focus:border-gray-500">
-            회원 목록
+            <a href="{{ '/dashboard/member' }}">회원 목록</a>
         </button>
         </div>
         <span class="text-gray-700 text-2xl m-4">상품기능</span>

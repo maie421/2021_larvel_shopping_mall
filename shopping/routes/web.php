@@ -17,22 +17,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->group(function(){
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/todo', function () {
-    return view('todo');
-})->name('dashboard-todo');
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/shopping', function () {
-    return view('shopping');
-})->name('shopping');
+    Route::get('/dashboard/todo', function () {
+        return view('todo');
+    })->name('dashboard-todo');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/member/form', function () {
-    return view('shopping/member/form');
-})->name('member_form');
+    Route::get('/dashboard/shopping', function () {
+        return view('shopping');
+    })->name('shopping');
 
-Route::middleware(['auth:sanctum', 'verified'])->resource('/dashboard/member', MemberController::class)->only([
-    'store'
-]);
+    Route::resource('/dashboard/member', MemberController::class)->only([
+        'store','index'
+    ]);
+
+    Route::get('/dashboard/member/form', function () {
+        return view('shopping/member/form');
+    })->name('member_form');
+});
